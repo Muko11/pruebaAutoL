@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 2%;
+}
+
+#p-introduccion {
+    font-weight: 500;
+}
+
+
+/* .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+} */
+
+#imagen-inicio {
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+.boton-registrar-autoescuela {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-registrar-autoescuela:hover {
+    background-color: white;
+    color: #008CBA;
+}
+
+.btn-sombra {
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+/* .boton-registrar-alumno {
+    background-color: #FFBF00;
+    color: white;
+    border: 2px solid #FFBF00;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-registrar-alumno:hover {
+    background-color: white;
+    color: #FFBF00;
+} */
+
+.boton-mas-caracteristicas,
+.boton-ver-autoescuelas {
+    background-color: #5F9EA0;
+    color: white;
+    border: 2px solid #5F9EA0;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-mas-caracteristicas:hover {
+    background-color: white;
+    color: #5F9EA0;
+}
+
+.boton-ver-autoescuelas:hover {
+    background-color: white;
+    color: #5F9EA0;
+}
+
+.h-border {
+    border-left: 10px outset #5F9EA0;
+    border-bottom: 2px dashed #5F9EA0;
+}
+
+
+/* .text-shadow-1 {
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-2 {
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-3 {
+    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+} */
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+}
+
+.ul-ventajas {
+    list-style-image: url('../imagenes/ventaja.png');
+}
+
+.contenedor-ventajas {
+    font-weight: bold;
+}
+
+
+/* .container-permisos {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+} */
+
+.lightbox-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lightbox-gallery div>img {
+    max-width: 100%;
+    display: block;
+}
+
+.lightbox-gallery div {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 0px) {
+    .lightbox-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lightbox>div {
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Lighbox CSS*/
+
+.lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.lightbox img {
+    display: block;
+    margin: auto;
+}
+
+
+/* .lightbox .caption {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #eee;
+} */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #5F9EA0;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen-permisos {
+    padding: 10%;
+}
+
+.elegir-formulario>a {
+    border-radius: 0px;
+}
+
+@media (max-width: 575px) {
+    .elegir-formulario>a {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-login .d-flex {
+        display: unset !important;
+    }
+}
+
+
+/* .form-crear-cuenta,
+.form-login {
+    border: 2px dashed #9A2A2A;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.2);
+}
+ */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* .form-crear-cuenta ::placeholder,
+.form-login ::placeholder {
+    opacity: 50%;
+    font-size: 18px;
+}
+
+.form-control {
+    font-size: 14px;
+} */
+
+
+/*
+.form-control {
+    border-radius: 50px;
+}
+*/
+
+#b-crear-cuenta {
+    text-decoration: underline;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+#b-iniciar-sesion {
+    text-decoration: none;
+    transform: scale(0.8);
+    border-radius: 5px;
+}
+
+
+/* .boton-formulario {
+    background-color: #9A2A2A;
+    color: white;
+    border: 2px solid #9A2A2A;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-formulario:hover {
+    background-color: white;
+    color: #9A2A2A;
+} */
+
+.b-cambiarForm {
+    background-color: #E3EBF7;
+    color: #2851AB;
+    border: 2px solid #2851AB;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-variant: small-caps;
+}
+
+#f-iniciar-sesion {
+    display: none;
+}
+
+.fondo-form {
+    background-color: #fff;
+}

@@ -1,0 +1,44 @@
+.nav a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.nav a:hover {
+    color: #5F9EA0;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.dropdown-menu {
+    color: #5F9EA0;
+}
+
+.dropdown-item:hover {
+    background-color: unset !important;
+}
+
+.buscar {
+    background-color: #5F9EA0;
+    border: 2px solid #5F9EA0;
+    color: white;
+    border-radius: 5px;
+}
+
+.buscar:hover {
+    background-color: #fff;
+    color: #5F9EA0;
+    border: 2px solid #5F9EA0;
+}
+
+.container-fluid {
+    margin-inline: 5%;
+}
+
+
+/* #btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+} */

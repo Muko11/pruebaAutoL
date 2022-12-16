@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 2%;
+}
+
+.h-border {
+    border-left: 10px outset #5F9EA0;
+    border-bottom: 2px dashed #5F9EA0;
+}
+
+#nav-tab {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav .nav-titulo {
+    color: #2851AB;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 300px;
+}
+
+.grid-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .grid-panel {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 40px;
+    }
+}
+
+
+/* .info-autoescuela {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.container .card {
+    background: linear-gradient(#5F9EA0 -50%, #fff 100%);
+    text-align: center;
+}
+
+.container .card .btn-group {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+} */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+
+/* .boton-registrar-autoescuela {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-registrar-autoescuela:hover {
+    background-color: white;
+    color: #008CBA;
+}
+
+.btn-caracteristicas {
+    width: 100%;
+}
+*/
+
+#agregar-usuario {
+    width: 85%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: separate;
+    border: 5px solid black;
+}
+
+table tr {
+    vertical-align: middle;
+}
+
+.img-acciones {
+    width: 30px;
+}
+
+#img-añadir {
+    width: 50px;
+}
+
+
+/* .buscador {
+    display: flex;
+    justify-content: center;
+} */
+
+.cabecera-tabla-administradores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

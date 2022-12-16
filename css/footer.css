@@ -1,0 +1,33 @@
+.enlace-footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlace-footer:hover {
+    color: #5F9EA0;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.redes:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.boton-ver-autoescuelas {
+    background-color: #5F9EA0;
+    color: white;
+    border: 2px solid #5F9EA0;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-ver-autoescuelas:hover {
+    background-color: white;
+    color: #5F9EA0;
+}

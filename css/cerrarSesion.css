@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 2%;
+}
+
+.bd-example {
+    width: 90%;
+    margin: 0 auto;
+}

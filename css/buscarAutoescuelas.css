@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 2%;
+}
+
+.h-border {
+    border-left: 10px outset #5F9EA0;
+    border-bottom: 2px dashed #5F9EA0;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+}
+
+.input-text:focus {
+    box-shadow: 0px 0px 0px;
+    border-color: #5F9EA0;
+    outline: 0px;
+}
+
+.form-control {
+    border: 1px solid #5F9EA0;
+}
+
+.container .card {
+    background: linear-gradient(#5F9EA0 -50%, #fff 100%);
+    text-align: center;
+}
+
+.container .card .btn-group {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.paginacion {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: #5F9EA0;
+    border: 1px solid #5F9EA0;
+}
